@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgrey;
+}
+.p{
+outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.1rem  0.1rem;
+    text-align: center;
+    background-color: #47AB11;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 27px;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+
+}
+.content {
+  min-height:90vh;
+  background-color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 9pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('background.jpg');
+}
+
+main {
+  height: 100vh;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.pust_logo {
+  width: 3.6em;
+  margin: 1em;
+  margin-right: 1em;
+  margin-top: 0.2em;
+  margin-left: 1em;
+}
+header {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: green;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+header h2 {
+  color: skyblue;
+  /*color:yellowgreen*/
+}
+a{
+  text-decoration:none;
+}
+/* navbar starts 
+nav {
+  overflow: visible;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: #6a0000;
+  flex-wrap: wrap;
+  overflow: visible;
+}
+nav ul li {
+  text-align: center;
+  position: relative;
+}
+li a {
+  padding: 1rem 4rem;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.not-hidden {
+  display: none;
+}
+.dropdown-content:hover{
+  background-color: rgb(77, 92, 230);
+}
+.dropdown-menu {
+  width: 100%;
+  background-color: #b41a1a;
+  position: absolute;
+  display: none;
+  padding: 0;
+}
+/* .dropdown-content{
+  display: none;
+} 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+ navbar ends*/
+
+
+ form {
+    width: 350px;
+    position: relative;
+    
+  }
+  form .form-field::before {
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+    color: #888888;
+    content: " ";
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  form .form-field:nth-child(1)::before {
+    background-image: url('user-icon.png');
+    width: 20px;
+    height: 20px;
+    top: 15px;
+  }
+  form .form-field:nth-child(2)::before {
+    background-image: url('lock-icon.png');
+    width: 16px;
+    height: 16px;
+  }
+  form .form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  form input {
+    font-family: inherit;
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    padding: 0.9rem 0.7rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 17px;
+    color: #4A4A4A;
+    text-indent: 40px;
+  }
+  form .btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.9rem 2.5rem;
+    text-align: center;
+    background-color: #47AB11;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 17px;
+  }
+footer {
+  background-color: green;
+  color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.owner {
+  font-family: monospace;
+}
+.owner a {
+  color: aqua;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    background-color: white;
+    height: 100vh;
+    margin: 0rem 5rem;
+  }
+  .pust_logo {
+    width: 3.3em;
+    float: left;
+    margin-right: 1em;
+    margin-top: 0.2em;
+  }
+  .header-text {
+    margin-left: 5em;
+  }
+  header {
+    text-align: left;
+    clear: left;
+  }
+  .content {
+    font-size: 11pt;
+  }
+  th {
+    padding: 0.5rem 1rem;
+  }
+  td {
+    padding: 0.5rem 1rem;
+  }
+}
+/* navbar media queries starts */
+@media only screen and (max-width: 1200px) {
+  header{
+    font-size: 0.5rem;
+  }
+  .welcome{
+    flex-wrap: wrap;
+    padding: 1em 1em;
+    font-size: 0.9rem;
+  }
+.photo img{
+  width: 15rem;
+}
+  .welcome .message{
+    padding: 1em;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+/*     align-items: flex-end; */
+    font-size: 0.1rem;
+  }
+  .not-hidden {
+    background-color: #6a0000;
+    display: initial;
+    text-align: center;
+  }
+   .not-hidden i{
+    float: right;
+  }
+  .links:not(.not-hidden) {
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  li a {
+    font-size: 1rem;
+  }
+  nav {
+    background-color: #6a0000;
+  }
+  
+}
+/* navbar media queries ends */
+@media only screen and (min-width: 1200px){
+  .links:hover{
+    background-color: #3f3636;
+  }
+}
